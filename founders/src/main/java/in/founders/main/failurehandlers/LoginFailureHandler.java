@@ -1,4 +1,4 @@
-package in.founders.main.controller;
+package in.founders.main.failurehandlers;
 
 
 
@@ -8,6 +8,6 @@ package in.founders.main.controller;
  * 05:08PM 24-5-2018
  * */
 
-public class PageHandlingController {
+public class LoginFailureHandler {
 
 }

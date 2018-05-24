@@ -1,5 +1,4 @@
-package in.founders.main.controller;
-
+package in.founders.main.securityconfiguration;
 
 
 /*Created By Parag Bhangale
@@ -8,6 +7,7 @@ package in.founders.main.controller;
  * 05:08PM 24-5-2018
  * */
 
-public class PageHandlingController {
+
+public class SecurityConfiguration {
 
 }

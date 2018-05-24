@@ -1,4 +1,5 @@
-package in.founders.main.controller;
+package in.founders.main.configuration;
+
 
 
 
@@ -8,6 +9,6 @@ package in.founders.main.controller;
  * 05:08PM 24-5-2018
  * */
 
-public class PageHandlingController {
+public class WebXMLinitializer {
 
 }

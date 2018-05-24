@@ -1,6 +1,4 @@
-package in.founders.main.controller;
-
-
+package in.founders.main.configuration;
 
 /*Created By Parag Bhangale
  * Email:paragbhangale@hotmail.com
@@ -8,6 +6,7 @@ package in.founders.main.controller;
  * 05:08PM 24-5-2018
  * */
 
-public class PageHandlingController {
+
+public class WebmvcInitializer {
 
 }
