@@ -1,7 +1,14 @@
 package in.founders.main.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -54,6 +61,33 @@ public class PageHandlingController {
 		
 	}
 	
-	
+	@RequestMapping(value="PlayFile.html",method=RequestMethod.GET)
+    public void playAudio(HttpServletRequest request,HttpServletResponse response){
+            System.out.println("--playFile");
+        File file = new File("F:/foundersRepositorygit/founders/src/main/webapp/resources/bbs/Trancerb.wma");
+            FileInputStream fis;
+            byte[] buffer=null;
+            try {
+                fis = new FileInputStream(file);
+                buffer= new byte[fis.available()];
+                fis.read(buffer);
+                fis.close();
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }        
+
+
+           response.setContentType("audio/vnd.wave");
+        try{                
+            response.getOutputStream().write(buffer);              
+        } catch (IOException e) {
+            e.printStackTrace();
+        }       
+
+    }
 	
 }

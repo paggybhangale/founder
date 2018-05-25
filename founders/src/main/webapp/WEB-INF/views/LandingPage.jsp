@@ -57,6 +57,9 @@
 							<div class="banner-content text-center">
 								<h1 class="text-uppercase"><c:out value="${PageTitle}"/></h1>
 								<a href="#" class="primary-btn d-inline-flex align-items-center"><span>Get Started</span></a>
+							
+							<embed id="player" style="height:100%;width:100%"src="PlayFile.html" controller="true" autoplay="true" autostart="True" type="audio/wav" />
+								
 							</div>
 						</div>
 					</div>
