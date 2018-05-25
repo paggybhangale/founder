@@ -7,6 +7,6 @@
 
 
  <!-- This Code included by Parag Bhangale. 24-05-2018  -->
-<c:redirect url="gotoLandingPage"></c:redirect>
+<c:redirect url="IndexPage.html"></c:redirect>
 </body>
 </html>

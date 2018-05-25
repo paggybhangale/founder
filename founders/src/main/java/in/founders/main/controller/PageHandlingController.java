@@ -21,7 +21,7 @@ public class PageHandlingController {
 	ModelAndView view_jsp;
 	Map<String,String> modelMap;
 	
-	@RequestMapping(value="/gotoLandingPage",method=RequestMethod.GET)
+	@RequestMapping(value="/IndexPage.html",method=RequestMethod.GET)
 	public ModelAndView getLandingPage_Jsp()
 	{
 		 modelMap=new HashMap<String ,String>();

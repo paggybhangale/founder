@@ -22,12 +22,12 @@
 		<!--
 		CSS
 		============================================= -->
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/nice-select.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="resources/bbs/css/linearicons.css">
+		<link rel="stylesheet" href="resources/bbs/css/font-awesome.min.css">
+		<link rel="stylesheet" href="resources/bbs/css/nice-select.css">
+		<link rel="stylesheet" href="resources/bbs/css/magnific-popup.css">
+		<link rel="stylesheet" href="resources/bbs/css/bootstrap.css">
+		<link rel="stylesheet" href="resources/bbs/css/main.css">
 	</head>
 	<body>
 		<div class="main-wrapper-first relative">
@@ -36,7 +36,7 @@
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
 							<div class="logo">
-								<a href="index.html"><img src="img/logo.png" alt=""></a>
+								<a href="index.html"><img src="resources/bbs/img/logo.png" alt=""></a>
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
@@ -81,7 +81,7 @@
 						<div class="col-md-6">
 							<div class="single-feature d-flex flex-wrap justify-content-between">
 								<div class="icon">
-									<img src="img/f2.png" alt="">
+									<img src="resources/bbs/img/f2.png" alt="">
 								</div>
 								<div class="desc">
 									<h4>Smart Security</h4>
@@ -92,7 +92,7 @@
 						<div class="col-md-6">
 							<div class="single-feature d-flex flex-wrap justify-content-between">
 								<div class="icon">
-									<img src="img/f3.png" alt="">
+									<img src="resources/bbs/img/f3.png" alt="">
 								</div>
 								<div class="desc">
 									<h4>Endless Support</h4>
@@ -103,7 +103,7 @@
 						<div class="col-md-6">
 							<div class="single-feature d-flex flex-wrap justify-content-between">
 								<div class="icon">
-									<img src="img/f4.png" alt="">
+									<img src="resources/bbs/img/f4.png" alt="">
 								</div>
 								<div class="desc">
 									<h4>Smart Security</h4>
@@ -127,7 +127,7 @@
 						</div>
 						<div class="col-lg-3">
 							<div class="about-thumb">
-								<img src="img/about.jpg" alt="" class="img-fluid">
+								<img src="resources/bbs/img/about.jpg" alt="" class="img-fluid">
 							</div>
 						</div>
 						<div class="col-lg-4 ml-auto">
@@ -167,7 +167,7 @@
 						<div class="col-md-7">
 							<div class="video-content text-center">
 								<h4 class="text-white mb-20">New Features that <br> open the door of future</h4>
-								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="resources/bbs/img/play-btn.png" alt=""></a>
 								<p class="text-white">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology.</p>
 							</div>
 						</div>
@@ -181,7 +181,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="single-blog">
-								<div class="thumb" style="background: url(img/b1.jpg);"></div>
+								<div class="thumb" style="background: url(resources/bbs/img/b1.jpg);"></div>
 								<div class="desc text-center">
 									<h4>Ultimate pet lover</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
@@ -190,7 +190,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="single-blog">
-								<div class="thumb" style="background: url(img/b2.jpg);"></div>
+								<div class="thumb" style="background: url(resources/bbs/img/b2.jpg);"></div>
 								<div class="desc text-center">
 									<h4>Upcoming role model</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
@@ -199,7 +199,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="single-blog">
-								<div class="thumb" style="background: url(img/b3.jpg);"></div>
+								<div class="thumb" style="background: url(resources/bbs/img/b3.jpg);"></div>
 								<div class="desc text-center">
 									<h4>Colors of Life</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
@@ -282,12 +282,12 @@
 
 
 
-		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="resources/bbs/js/vendor/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/jquery.nice-select.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="resources/bbs/js/vendor/bootstrap.min.js"></script>
+		<script src="resources/bbs/js/jquery.ajaxchimp.min.js"></script>
+		<script src="resources/bbs/js/jquery.nice-select.min.js"></script>
+		<script src="resources/bbs/js/jquery.magnific-popup.min.js"></script>
+		<script src="resources/bbs/js/main.js"></script>
 	</body>
 </html>
