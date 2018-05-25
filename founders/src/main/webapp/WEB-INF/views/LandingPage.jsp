@@ -40,9 +40,9 @@
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
-									<a href="index.html">Home</a>
-									<a href="generic.html">Generic</a>
-									<a href="elements.html">Elements</a>
+									<a href="IndexPage.html"><c:out value="${'Home'}"/></a>
+									<a href="GenericPage.html"><c:out value="${'generic'}"/></a>
+									<a href="ElementsPage.html"><c:out value="${'elements'}"/></a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
@@ -55,7 +55,7 @@
 					<div class="row justify-content-center height align-items-center">
 						<div class="col-lg-8">
 							<div class="banner-content text-center">
-								<h1 class="text-uppercase">we’re <br> Creative</h1>
+								<h1 class="text-uppercase"><c:out value="${PageTitle}"/></h1>
 								<a href="#" class="primary-btn d-inline-flex align-items-center"><span>Get Started</span></a>
 							</div>
 						</div>

@@ -21,8 +21,13 @@ public class PageHandlingController {
 	ModelAndView view_jsp;
 	Map<String,String> modelMap;
 	
+	
+	
+	/* this method is resolve the view page of Landingpage  
+	 *   ----.html mapping for every link
+	 * **/
 	@RequestMapping(value="/IndexPage.html",method=RequestMethod.GET)
-	public ModelAndView getLandingPage_Jsp()
+	private ModelAndView getLandingPage_Jsp()
 	{
 		 modelMap=new HashMap<String ,String>();
 		 view_jsp=new ModelAndView("LandingPage");
@@ -32,5 +37,23 @@ public class PageHandlingController {
 	}
 	
 	
-
+	@RequestMapping(value="/GenericPage.html",method=RequestMethod.GET)
+	private ModelAndView getGenericPage_Jsp()
+	{
+		view_jsp=new ModelAndView("generic");
+		return view_jsp;
+		
+	}
+	
+	
+	@RequestMapping(value="/ElementsPage.html",method=RequestMethod.GET)
+	private ModelAndView getElementsPage_Jsp()
+	{
+		view_jsp=new ModelAndView("elements");
+		return view_jsp;
+		
+	}
+	
+	
+	
 }
