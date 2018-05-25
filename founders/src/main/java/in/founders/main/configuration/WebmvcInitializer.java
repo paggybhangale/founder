@@ -1,13 +1,16 @@
 package in.founders.main.configuration;
 
 
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.ResourceBundleViewResolver;
 
 /*Created By Parag Bhangale
  * Email:paragbhangale@hotmail.com
@@ -26,6 +29,16 @@ public class WebmvcInitializer extends WebMvcConfigurerAdapter
 	 * 
 	 * Internal View Resolver is used for the resolve the view
 	 * 
+	 * Equivalent XML code :-
+	 * <bean id="viewResolver"
+    	      class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+              <property name="prefix">
+                  <value>/WEB-INF/views/</value>
+               </property>
+              <property name="suffix">
+                 <value>.jsp</value>
+              </property>
+        </bean>
 	 * */
 	@Bean
 	public InternalResourceViewResolver getViewResolver()
@@ -54,5 +67,52 @@ public class WebmvcInitializer extends WebMvcConfigurerAdapter
 								.addResourceHandler("/resources/**")
 								.addResourceLocations("/resources/");
 	}
+	
+	
+	
+
+
+	/*Auther-Parag Bhangale*/
+	/*
+	 * 
+	 *This method is use for the handling and accessing the messages.properties file 
+	 *which is in the src/test/rsources
+	 *
+	 *
+	 *messages.properties->
+	 *		page.header = Test page
+			page.greetings = Hi everyone!
+	 *
+	 * after tha we can use this using Spring tag liabrary=
+	 * 
+	 * <%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+	 *		...
+	 *		<h1><spring:message code="page.header" /> </h1>
+	 *		<p><spring:message code="page.greetings" /> </p>
+	 * 
+	 * 
+	 * 
+	 * */
+	public MessageSource messageSource()
+	{
+		ResourceBundleMessageSource messageSource=new ResourceBundleMessageSource();
+		messageSource
+					.setBasenames("messages");
+		messageSource
+					.setDefaultEncoding("UTF-8");
+		
+		return messageSource;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
