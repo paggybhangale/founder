@@ -274,8 +274,10 @@
 							<a href="#"><i class="fa fa-dribbble"></i></a>
 							<a href="#"><i class="fa fa-behance"></i></a>
 						</div>
-						<div class="copy-right-text">Copyright &copy; 2018 All rights reserved   |   This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com">Colorlib</a></div>
-
+						<div class="copy-right-text">Copyright &copy; 2018 All rights reserved   |   This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com"><c:out value="Parag Bhangale"></c:out></a></div>
+					${messageafterlogin}
+					${logoutbutton}
+					${logout_successfully}
 					</div>
 				</div>
 			</footer>

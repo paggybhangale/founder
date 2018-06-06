@@ -2,6 +2,8 @@ package in.founders.main.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import in.founders.main.securityconfiguration.SecurityConfiguration;
+
 /*Created By Parag Bhangale
  * Email:paragbhangale@hotmail.com
  * 
@@ -13,7 +15,7 @@ public class WebXMLinitializer extends AbstractAnnotationConfigDispatcherServlet
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class[] {SecurityConfiguration.class};
 	}
 
 	@Override
